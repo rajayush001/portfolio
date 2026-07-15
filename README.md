@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Ayush Raj</h1>
-<h3 align="center">Frontend Developer | Project Coordinator | Client Delivery Enthusiast</h3>
+<h3 align="center">Web Developer | Project Coordinator | Client Delivery Enthusiast</h3>
 
 <p align="center">
 Building responsive web applications, delivering seamless user experiences, and bridging the gap between technology and business.
