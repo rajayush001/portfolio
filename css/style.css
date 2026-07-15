@@ -74,7 +74,7 @@
         }
 
         /* Descriptive text and labels in dark mode */
-        body.dark-theme .hero-subtitle,
+        body.dark-theme .hero-subtitle,.hero-subtitle_1,
         body.dark-theme .project-desc,
         body.dark-theme .education-desc,
         body.dark-theme .education-school,
@@ -335,6 +335,11 @@
 
         .hero-subtitle {
             font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+        .hero-subtitle_1 {
+            font-size: 1rem;
             color: var(--text-muted);
             margin-bottom: 1rem;
         }
@@ -782,6 +787,9 @@
                 flex-basis: 100%;
                 max-width: 100%;
             }
+            section#achievements{
+                padding: 3rem 1rem;
+            }
         }
 
         .achievement-slide .education-card {
@@ -960,5 +968,70 @@
             }
             .theme-toggle {
                 display: none;
+            }
+            /* Improve hero responsiveness on small screens */
+            .hero {
+                padding: 6rem 1rem 3rem;
+                min-height: auto;
+                background-position: center;
+            }
+
+            /* Hide large decorative blobs that cause overflow */
+            .hero::before,
+            .hero::after {
+                display: none;
+            }
+
+            .hero-container {
+                padding: 0 1rem;
+                gap: 1.5rem;
+            }
+
+            .hero-content h1 {
+                font-size: 1.8rem;
+                line-height: 1.25;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .hero-subtitle_1 {
+                font-size: 0.95rem;
+            }
+
+            .hero-dynamic {
+                font-size: 1rem;
+                min-height: 1.4rem;
+            }
+
+            .hero-visual {
+                margin: 0 auto;
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .tech-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                gap: 0.75rem;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 320px;
+                text-align: center;
+            }
+
+            .hero-visual .tech-tag {
+                font-size: 0.8rem;
+                padding: 0.3rem 0.6rem;
             }
         }
